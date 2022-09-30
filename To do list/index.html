@@ -2,14 +2,20 @@
 <html>
     <head>
         <title>To do list</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
-        <form id="todo-form">
-            <input type="text" id="todo" />
-            <input type="submit" value="Send" />
-        </form>
-        <ul id="todo-list">
-        </ul>
+        <div class="box">
+            <div class="content">
+                <form id="todo-form">
+                    <input type="text" id="todo" placeholder="what do you have to do?"/>
+                    <br />
+                    <input type="submit" value="Send" id="sub" />
+                </form>
+                <ul id="todo-list">
+                </ul>
+            </div>
+        </div>
     </body>
     <script src="main.js"></script>
 </html>
