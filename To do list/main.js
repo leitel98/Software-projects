@@ -53,9 +53,11 @@ window.onload = () => {
         e.preventDefault();
         const todo = document.getElementById('todo');
         const todoText = todo.value;
-        todo.value = '';
-        todos.push(todoText);
-        updateTodos(todos)
-        render()
+        if (todoText != '') {
+            todo.value = '';
+            todos.push(todoText);
+            updateTodos(todos)
+            render()
+        }
     }
 }
